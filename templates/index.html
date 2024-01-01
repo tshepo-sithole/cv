@@ -1,0 +1,449 @@
+
+{% extends "base.html" %}
+
+{% block header %}
+<head>
+  <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact and References</span></a></li>
+          <li><a href="#academic_record" class="nav-link scrollto"><i class="bx bx-book-open"></i> <span>Academic Record</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+</head>
+{% endblock %}
+
+{% block content %}
+
+<!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Tshepo Sithole</h1>
+      <p>I'm <span class="typed" data-typed-items="a Mech. Designer, a Developer, a Part Time Freelancer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>This is a detailed digital CV outlining my work and projects done throughout my professional experience thus far.
+            My main aim is to gain the necessary experience to advance my skills in accordance to the existing industrial 4.0.
+            The growing field of artificial intelligence has always served as the motivation behind my career choice.
+            <br><br>Since mathematics has always been an easy subject to grasp, I believe that I am more of a logical thinker.
+            I can proudly add that inventive thinking skills are part of my strengths. I enjoy working with other groups of engineers
+            simply because I believe that through teamwork, a start of a solid foundation to overcome cooperate challenges
+            is built. I believe that the combination of each person’s unique views within a group, when properly
+            analyzed and positively criticized, can elevate companies objectives to achieve its goals.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="static/assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Mechanical Designer</h3>
+            <p class="fst-italic">
+              Extensive experience in Power Transformer Tank, Cover, piping and Conservator Design.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Identity Number:</strong> <span>941028 5401 08 1</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Gender:</strong> <span>Male</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Languages:</strong> <span>South Sotho, English, Zulu</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>28 October 1994</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Pretoria, Gauteng ZA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Drivers Licence:</strong> <span>Motorcycle Learners Licence (from Jan 2023)</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span>South African</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Race:</strong> <span>Black</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{ age }}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Highest Qualification:</strong> <span>National Diploma</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>tshepo941028@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available part-time</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Throughout my current 5 year professional experience as a mechanical graduate I have acquired variety of
+            skills in both engineering and IT (System Development) areas:</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">MS Word & PowerPoint <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MS Excel (VBA, Pivots, Formulas, Micros) <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MS PowerPlatforms (PowerApps, PowerAutomate, PowerBI, PowerQuery) <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SolidWorks, Creo and ANSYS design tools<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Web Development (HTML, CSS, JavaScript, Flask) <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python Programming (GUI, OOP, API, Web Scraping) <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Process and Quality (ISO 9001:2018) <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>I have vast experience in process engineering field, quality control and quality assurance, MS programs and Power Transformer design</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Tshepo Sithole</h4>
+              <p><em>Innovative and deadline-driven Mechanical Designer and Process Engineer with 5+ years of experience designing and developing user-centered programs for data analysis and process simplification from initial concept to final, polished deliverables.</em></p>
+              <ul>
+                <li>Saulsville 6 Mathate Street, Pretoria 0125, ZA</li>
+                <li>(+27) 67 846 1046</li>
+                <li>tshepo941028@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Secondary Education (Matric)</h4>
+              <h5>2013</h5>
+              <p><em>Clubview Secondary School, Qwaqwa, Free State</em></p>
+              <p>This is the school where I was awarded a 'Distinctions in Mathematics and Physical Sciences' Certificate from Investec in January 2014
+                <br><br>Earlier, on the 11 Dec 2011, I was awarded a sporting (soccer) achievement titled 'The Most Committed Player' from a local team known as KFC (Khosi Football Club)</p>
+            </div>
+            <div class="resume-item">
+              <h4>National Diploma in Mechanical Engineering</h4>
+              <h5>2014 - 2018</h5>
+              <p><em>Tshwane University of Technology, Pretoria West, Gauteng</em></p>
+              <p>The course included skills in Mechanical Designing ocncepts, Strenght of Materials, Manufacturing, Electrotechnology, Fluid Mechanics, etc. Take a look at my academic records under the Portfolio Section</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Junior Mechanical Designer</h4>
+              <h5>2022 - Present</h5>
+              <p><em>SGB-SMIT POWER MATLA, Pretoria West, Gauteng </em></p>
+              <ul>
+                <li>Preparing Tender designs (Solidworks 2015 and Creo Parametric 2.0)</li>
+                <li>Preparing Production / Workfloor designs (Transformer Tank, Conservator, piping and Cover Designs)</li>
+                <li>Maintaining PowerApps applications (Deviation Requests and Design Change Requests)</li>
+                <li>Additional improvements (Digitization – Python Programming – Developed pdf drawing opening app integrated with SharePoint using MS Graph API)</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Junior Process / Quality Engineer</h4>
+              <h5>2020 - 2022</h5>
+              <p><em>SGB-SMIT POWER MATLA, Pretoria West, Gauteng </em></p>
+              <ul>
+                <li>Developing calibration equipment logging system</li>
+                <li>Maintaining the ISO 9001-2015 compliance throughout production</li>
+                <li>Carrying out internal, travelling files and supplier audits.</li>
+                <li>Preparing Inspection and Test Plans</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Junior Process Engineer</h4>
+              <h5>2018 - 2020</h5>
+              <p><em>SGB-SMIT POWER MATLA, Pretoria West, Gauteng </em></p>
+              <ul>
+                <li>Simplifying winding and assembly production processes using Sprint method and Six Sigma Concepts.</li>
+                <li>Designing tools/materials using the SolidWorks Programs (including Simulation).</li>
+                <li>Developing systems such as internal and supplier NCR and manufacturing Deviations</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Mechanical P1/P2</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>PowerTech Transformers, Pretoria West, Gauteng</em></p>
+              <ul>
+                <li>P2 - Research project involving the Winding Height Prediction. Part of simplifying the power transformer windings manufacturing.</li>
+                <li>P1 - Introduction to industrial operations process engineers work with on a daily basis.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="pdf-div">
+            <h3 align="left"><a class="pdf-button" href="https://drive.google.com/file/d/134eS4P0sq-DF4LsnZ83BxmNVPxuYjHlF/view?usp=sharing" target="_blank">View PDF</a></h3>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Below is the list of Projects completed that assisted my employer, myself together with other team members in simplifying data collection and analysis and also greatly facilitating repetitive tasks</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-design">Design</li>
+              <li data-filter=".filter-process">Process</li>
+              <li data-filter=".filter-quality">Quality</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Drawing opening.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="static/assets/img/portfolio/Drawing opening.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Drawing Opening Application"><i class="bx bx-plus"></i></a>
+                <a href="{{url_for('portfolio_details', project_title='Drawing Opening Application')}}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Tender Design Tool.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="static/assets/img/portfolio/Tender Design Tool.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Tender Design Tool"><i class="bx bx-plus"></i></a>
+                <a href="{{url_for('portfolio_details', project_title='Tender Design Tool')}}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-process">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Maintenance Breakdown Log System.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="static/assets/img/portfolio/Maintenance Breakdown Log System.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Maintenance Breakdown Log System"><i class="bx bx-plus"></i></a>
+                <a href="{{url_for('portfolio_details', project_title='Maintenance Breakdown Log System')}}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-process">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Process Project Log.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="static/assets/img/portfolio/Process Project Log.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Process Project Log"><i class="bx bx-plus"></i></a>
+                <a href="{{url_for('portfolio_details', project_title='Process Project Log Application')}}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-quality">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Supplier NCR.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="static/assets/img/portfolio/Supplier NCR.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Supplier NCR System"><i class="bx bx-plus"></i></a>
+                <a href="{{url_for('portfolio_details', project_title='Supplier NCR Application')}}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact and References</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>6 Mathate Street, Saulsville, Pretoria ZA</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>tshepo941028@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+27 67 846 1046</p>
+              </div>
+
+              <iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=6 mathate street saulsville&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <div class="info">
+              <div class="reference">
+                <i class="bi bi-person"></i>
+                <h4>References</h4>
+                <p></p>
+                <p>
+                  Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: Jubi Matjipa<br>
+                  Job Title&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: Mechanical Design Manager<br>
+                  Company&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;: SGB-SMIT POWER MATLA<br>
+                  Telephone/Mobile&emsp;&nbsp;: +27 12 318 5531 / +27 72 412 9896<br>
+                  E-mail address&emsp;&emsp;&emsp;: jubi.matjipa@sgb-smit.group
+                </p>
+                <p>
+                  Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: Carel Carelsen<br>
+                  Job Title&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: Transformer Technical and Manufacturing Specialist<br>
+                  Company&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;: SGB-SMIT POWER MATLA<br>
+                  Telephone/Mobile&emsp;&nbsp;: +27 12 318 9839 / +27 84 987 4380<br>
+                  E-mail address&emsp;&emsp;&emsp;: carel.carelsen@sgb-smit.group
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Academic Record Section ======= -->
+    <section id="academic_record" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Academic Record</h2>
+          <p>Below is the list of Projects completed that assisted my employer, myself together with other team members in simplifying data collection and analysis and also greatly facilitating repetitive tasks</p>
+        </div>
+
+          <div class="table">
+            <p>1st Year</p>
+                <table>
+                  <tr><th>No.</th><th>Subject</th><th>Mark</th></tr>
+                  <tr><td>1</td><td>Computer Aided Draughting I</td><td>77 (distinction)</td></tr>
+                  <tr><td>2</td><td>Engineering Communication I</td><td>64</td></tr>
+                  <tr><td>3</td><td>Electrotechnology I</td><td>83 (distinction)</td></tr>
+                  <tr><td>4</td><td>Mathematics I</td><td>82 (distinction)</td></tr>
+                  <tr><td>5</td><td>Mechanical Engineering Drawing I</td><td>50</td></tr>
+                  <tr><td>6</td><td>Mechanics I</td><td>79 (distinction)</td></tr>
+                  <tr><td>7</td><td>Mechanical Manufacturing I</td><td>62</td></tr>
+                  <tr><td>8</td><td>Electrotechnology II</td><td>61</td></tr>
+                  <tr><td>9</td><td>Fluid Mechanics II</td><td>77 (distinction)</td></tr>
+                  <tr><td>10</td><td>Mathematics II</td><td>88 (distinction)</td></tr>
+                  <tr><td>11</td><td>Mechanics of Machines II</td><td>82 (distinction)</td></tr>
+                  <tr><td>12</td><td>Strength of Materials II</td><td>63</td></tr>
+                  <tr><td>13</td><td>Thermodynamics II</td><td>84 (distinction)</td></tr>
+                </table>
+
+            <br>
+            <p>2nd Year</p>
+                <table>
+                  <tr><th>No.</th><th>Subject</th><th>Mark</th></tr>
+                  <tr><td>1</td><td>Fluid Mechanics III</td><td>67</td></tr>
+                  <tr><td>2</td><td>Mathematics III</td><td>81 (distinction)</td></tr>
+                  <tr><td>3</td><td>Mechanics of Machines Ill</td><td>75 (distinction)</td></tr>
+                  <tr><td>4</td><td>Mechanical Engineering Design II</td><td>82 (distinction)</td></tr>
+                  <tr><td>5</td><td>Strength of Materials III</td><td>73</td></tr>
+                  <tr><td>6</td><td>Thermodynamics III</td><td>75 (distinction)</td></tr>
+                  <tr><td>7</td><td>Applied Strength of Materials III</td><td>72</td></tr>
+                  <tr><td>8</td><td>Electric Machines II</td><td>62</td></tr>
+                  <tr><td>9</td><td>Hydraulic Machines III</td><td>69</td></tr>
+                  <tr><td>10</td><td>Mechanical Engineering Design III</td><td>71</td></tr>
+                  <tr><td>11</td><td>Steam Plant III</td><td>61</td></tr>
+                  <tr><td>12</td><td>Theory of Machines III</td><td>58</td></tr>
+                </table>
+
+            <br>
+            <p>3rd Year</p>
+                <table>
+                  <tr><th>No.</th><th>Subject</th><th>Mark</th></tr>
+                  <tr><td>1</td><td>Experiential Learning I</td><td>72</td></tr>
+                  <tr><td>2</td><td>Experiential Learning II</td><td>71</td></tr>
+                </table>
+          </div>
+
+      </div>
+    </section><!-- End Academic Record Section -->
+
+  </main><!-- End #main -->
+
+{% endblock %}
