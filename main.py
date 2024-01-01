@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, render_template
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
@@ -5,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # CREATE DATABASE
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///new-projects.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_URI', "sqlite:///new-projects.db")
 
 # CREATE THE EXTENSION
 db = SQLAlchemy()
@@ -70,4 +72,4 @@ def portfolio_details(project_title):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
