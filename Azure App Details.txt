@@ -1,0 +1,6 @@
+Online CV
+app id: 4cdbaab5-833a-4356-b890-6842afba5cbb
+object id: 11938492-7d5b-4b8d-8689-8da938ef3481
+tenant id: b3ea9958-55de-4c08-9b2c-17b86884f68e
+secret id: 1af65572-a6fe-4d32-8b12-a8d9a805b253
+secret id value: yY48Q~SgOkvQmjoCc8AfO_N.tLECzvsAj8I5saAp
