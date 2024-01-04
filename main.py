@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # CREATE DATABASE
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_URI', "sqlite:///new-projects.db")
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_URI')
 
 # CREATE THE EXTENSION
 db = SQLAlchemy()
