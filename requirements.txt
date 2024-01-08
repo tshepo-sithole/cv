@@ -9,4 +9,6 @@ requests==2.31.0
 SQLAlchemy==2.0.23
 xlwings==0.30.9
 gunicorn==19.7.1
+psycopg2==2.9.9
+pyFirmata2==2.4.5
 
