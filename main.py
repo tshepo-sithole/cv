@@ -1,5 +1,4 @@
 import os
-
 from flask import Flask, render_template
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
@@ -7,7 +6,9 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # CREATE DATABASE
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///new-projects.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_URI')
+# postgresql://project_table_user:LbswgCL8igMClzMwxjH15YH6NpAJCNYH@dpg-cm9c9lgcmk4c739dtftg-a.oregon-postgres.render.com/project_table
+
 # CREATE THE EXTENSION
 db = SQLAlchemy()
 # INITIALISE THE APP WITH THE EXTENSION
@@ -17,11 +18,11 @@ db.init_app(app)
 # CREATE TABLE
 class ProjectTable(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(250), unique=True, nullable=False)
-    category = db.Column(db.String(250), nullable=False)
-    client = db.Column(db.String(250), nullable=False)
-    date = db.Column(db.String(250), nullable=False)
-    project_description = db.Column(db.String(250), nullable=False)
+    title = db.Column(db.String(), unique=True, nullable=False)
+    category = db.Column(db.String(), nullable=False)
+    client = db.Column(db.String(), nullable=False)
+    date = db.Column(db.String(), nullable=False)
+    project_description = db.Column(db.String(), nullable=False)
 
 
 # Create table schema in the database. Requires application context.
