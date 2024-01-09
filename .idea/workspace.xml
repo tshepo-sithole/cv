@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e22c8d42-cdd6-482b-91bf-477a480446db" name="Changes" comment="add pyFirmata2==2.4.5">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e22c8d42-cdd6-482b-91bf-477a480446db" name="Changes" comment="upgraded to python 3.10">
       <change beforePath="$PROJECT_DIR$/.idea/my-personal-site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my-personal-site.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/portfolio-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portfolio-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/tshep",
+    "last_opened_file_path": "C:/Users/tshep/PycharmProjects/my-personal-site",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -36,9 +38,9 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DB_URI" value="postgresql://project_table_user:LbswgCL8igMClzMwxjH15YH6NpAJCNYH@dpg-cm9c9lgcmk4c739dtftg-a.oregon-postgres.render.com/project_table" />
         <env name="FLASK_APP" value="my-personal-site" />
-        <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -90,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704707333432</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="upgraded to python 3.10">
+      <created>1704711889278</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704711889278</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +117,7 @@
     <MESSAGE value="fixed db" />
     <MESSAGE value="added pyFirmata2==2.4.5" />
     <MESSAGE value="add pyFirmata2==2.4.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pyFirmata2==2.4.5" />
+    <MESSAGE value="upgraded to python 3.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgraded to python 3.10" />
   </component>
 </project>

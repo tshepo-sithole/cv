@@ -9,7 +9,7 @@
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
-        <h2>{{ selected_project.title }}</h2>
+        <h2>{{ selected_project[1].value }}</h2>
         <ol>
           <li><a href="{{url_for('home_page')}}">Home</a></li>
           <li>Portfoio Details</li>
@@ -29,15 +29,15 @@
           <div class="portfolio-details-slider swiper">
             <div class="swiper-wrapper align-items-center">
               <div>
-                {% if selected_project.title == 'Drawing Opening Application': %}
+                {% if selected_project[1].value == 'Drawing Opening Application': %}
                 <img src="static/assets/img/portfolio/Drawing opening.png" alt="">
-                {% elif selected_project.title == 'Tender Design Tool' %}
+                {% elif selected_project[1].value == 'Tender Design Tool' %}
                 <img src="static/assets/img/portfolio/Tender Design Tool.png" alt="">
-                {% elif selected_project.title == 'Maintenance Breakdown Log System' %}
+                {% elif selected_project[1].value == 'Maintenance Breakdown Log System' %}
                 <img src="static/assets/img/portfolio/Maintenance Breakdown Log System.png" alt="">
-                {% elif selected_project.title == 'Process Project Log Application' %}
+                {% elif selected_project[1].value == 'Process Project Log Application' %}
                 <img src="static/assets/img/portfolio/Process Project Log.png" alt="">
-                {% elif selected_project.title == 'Supplier NCR Application' %}
+                {% elif selected_project[1].value == 'Supplier NCR Application' %}
                 <img src="static/assets/img/portfolio/Supplier NCR.png" alt="">
                 {% endif %}
               </div>
@@ -50,14 +50,14 @@
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Category</strong>: {{ selected_project.category }}</li>
-              <li><strong>Client</strong>: {{ selected_project.client }}</li>
-              <li><strong>Project date</strong>: {{ selected_project.date }}</li>
+              <li><strong>Category</strong>: {{ selected_project[2].value }}</li>
+              <li><strong>Client</strong>: {{ selected_project[3].value }}</li>
+              <li><strong>Project date</strong>: {{ selected_project[4].value }}</li>
             </ul>
           </div>
           <div class="portfolio-description">
-            <h2>{{ selected_project.title }}</h2>
-            <p>{{ selected_project.project_description }}</p>
+            <h2>{{ selected_project[1].value }}</h2>
+            <p>{{ selected_project[5].value }}</p>
           </div>
         </div>
 
