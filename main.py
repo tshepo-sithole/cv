@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def home_page():
     current_year = datetime.now().year
-    age = current_year - 1996
+    age = current_year - 1994
     return render_template('index.html', age=age)
 
 
